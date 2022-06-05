@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a193c7a199.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="aktiv">Startseite</a></li>
+                <li><a href="./downloads.php">Downloads</a></li>
+                <li><a href="./kontakt.php">Kontakt</a></li>
+            </ul>
+
+            <ul>
+                <li><a href=""><i class="fa-solid fa-heart-circle-plus"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="buttons">
+            <button class="normal" onclick="currentSlide(1)">
+                <div class="nothing">
+                    <a>Home</a>
+                </div>
+            </button>
+
+            <button class="normal" onclick="currentSlide(2)">
+                <div class="text-n">
+                    <a>Unser konzept</a>
+                </div>
+            </button>
+            
+            <button class="normal" onclick="currentSlide(3)">
+                <div class="text-n">
+                    <a>Service</a>
+                </div>
+            </button>
+            
+            <button class="normal" onclick="currentSlide(4)">
+                <div class="text-n">
+                    <a>PDF</a>
+                </div>
+            </button>
+        </div>
+
+        <div class="banner">
+            <!-- container -->
+            <div class="slideshow-container">
+
+            <!-- Home -->
+            <div class="mySlides fade">
+            <img src="./img/smart-city.jpg" alt="">
+            </div>
+
+            <!-- Unser Konzept -->
+            <div class="mySlides fade">
+                <img src="./img/future-mobility.jpg" alt="">
+                <div class="row-konzept">
+                    <div class="konzept-ziel">
+                        <h3>Energie:</h3>
+                        <div class="konzept-content">
+                            <ul>
+                                <li><a>Saubere Energie in unserer Stadt</a></li>
+                                <li><a>Solar und Kernreaktor Energie</a></li>
+                                <li><a>Erneuerbare Primärenergie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="konzept-ziel">
+                        <h3>Fortbewegungsmittel:</h3>
+                        <div class="konzept-content">
+                            <ul>
+                                <li><a>Schwebebahn</a></li>
+                                <li><a>Segways</a></li>
+                                <li><a>E-Roller</a></li>
+                                <li><a>Primär Elektroautos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="konzept-ziel">
+                        <h3>Unsere Ziele:</h3>
+                        <div class="konzept-content">
+                            <ul>
+                                <li><a>WLAN Abdeckung (Innenstadt)</a></li>
+                                <li><a>Fortbewegungsmittel (Innenstadt)</a></li>
+                                <li><a>Fortbewegungsmittel (Innenstadt)</a></li>
+                                <li><a>Fortbewegungsmittel (Innenstadt)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service -->
+            <div class="mySlides fade">
+                <img src="./img/service.jpg" alt="">
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Öffnungszeiten:</h3>
+                        <p>Allgemein<br> Montag - Freitag 8.00 - 12.00 Uhr<br> Donnerstag zusätzl. 14.00 - 17.00 Uhr</p>
+                        <p>Bürgerbüro<br> Montag 8.00 - 16.00 Uhr<br> Dienstag 8.00 - 16.00 Uhr<br> Mittwoch 8.00 - 12.30 Uhr<br> Donnerstag 8.00 - 17.00 Uhr<br> Freitag 8.00 - 12.30 Uhr<br> Samstag 10.00 - 12.00 Uhr<br> <sup>(jeden 1. und 3. Samstag im Monat)</sup></p>
+                        <p>Für einzelne Dienststellen gelten abweichende Öffnungszeiten. Diese können im <a href="/rathaus-buergerservice/dienstleistungen-a-z" target="_top" class="link-int">Dienstleistungswegweiser</a> eingesehen werden.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Kontakt:</h3>
+                        <p>Rhein-Kreis Neuss</p>
+                        <p>Oberstraße 91<br> 41460 Neuss</p>
+                        <p>Telefon: +49 (0)2131 / 928 - 0<br> Telefax: +49 (0)2181 / 608 - 202</p>
+                        <p>E-Mail: <a href="mailto:meta.hellix@gmail.com" title="Öffnet ein Fenster zum Versenden der E-Mail" class="link-mail">meta.hellix<span class="AT">@</span>gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="row-unterlage">
+                    <div class="unterlagen">
+                        <h3>Coming soon</h3>
+                        <a href="">...</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="support">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="./downloads.html">Downloads</a></li>
+                        <li><a href="./kontakt.php">Kontaktformular</a></li>
+                    </ul>
+                </div>
+
+                <div class="rechtliches">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="">AGB</a></li>
+                        <li><a href="">Impressum</a></li>
+                        <li><a href="">Datenschutz</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-media">
+                    <h4>Social Media</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/metahellix" target="_blank"><i class="fa fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="copyright">
+                    <h4>©2022 Hellix AG</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/open-close.js"></script>
+</body>
+</html>
